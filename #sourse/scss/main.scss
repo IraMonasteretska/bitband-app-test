@@ -45,23 +45,25 @@
 
     .picwrapper {
         text-align: right;
+        position: relative;
+        z-index: 2;
 
         img {
             max-width: 100%;
         }
     }
 
-    .figabs1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
+    // .figabs1 {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    // }
 
-    .figabs2 {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
+    // .figabs2 {
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: 0;
+    // }
 
     .bublewrapp {
         position: absolute;
@@ -96,6 +98,30 @@
 
 
     }
+
+    .welcomescreen__bigfigure {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.05;
+        z-index: 1;
+
+        svg {
+            width: 100%;
+            position: absolute;
+            left: -700px;
+            top: -410px;
+        }
+    }
+
+
+
+
+
+
+
 }
 
 .whatispm {
@@ -360,6 +386,44 @@
 
     }
 
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1399.8px) {
+    .welcomescreen .welcomescreen__leftbox h1 {
+        br {
+            display: none;
+        }
+    }
+
+    .welcomescreen {
+        min-height: 750px;
+    }
+
+    .whatispm .whatispm__textbox h2 {
+        font-size: 42px;
+    }
+
+    .whatispm .whatispm__textbox {
+        padding-top: 50px;
+        padding-left: 50px;
+    }
 
 
 }
