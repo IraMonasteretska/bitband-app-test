@@ -1,0 +1,105 @@
+@media(min-width:1350.8px) {
+    .container {
+        max-width: 1340px;
+    }
+}
+
+@font-face {
+    font-family: 'gothamrnd_book';
+    src: url('../fonts/gothamrnd_book.eot');
+    src: url('../fonts/gothamrnd_book.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd_book.woff2') format('woff2'),
+        url('../fonts/gothamrnd_book.woff') format('woff'),
+        url('../fonts/gothamrnd_book.ttf') format('truetype'),
+        url('../fonts/gothamrnd_book.svg#gothamrnd_book') format('svg');
+}
+
+@font-face {
+    font-family: 'gothamrnd_book';
+    src: url('../fonts/gothamrnd_medium.eot');
+    src: url('../fonts/gothamrnd_medium.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd_medium.woff2') format('woff2'),
+        url('../fonts/gothamrnd_medium.woff') format('woff'),
+        url('../fonts/gothamrnd_medium.ttf') format('truetype'),
+        url('../fonts/gothamrnd_medium.svg#gothamrnd_medium') format('svg');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'gothamrnd_book';
+    src: url('../fonts/gothamrnd_bold.eot');
+    src: url('../fonts/gothamrnd_bold.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd_bold.woff2') format('woff2'),
+        url('../fonts/gothamrnd_bold.woff') format('woff'),
+        url('../fonts/gothamrnd_bold.ttf') format('truetype'),
+        url('../fonts/gothamrnd_bold.svg#gothamrnd_bold') format('svg');
+    font-weight: 600;
+}
+
+:root {
+    scroll-behavior: inherit;
+}
+
+
+body,
+html {
+    height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.pagewrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'gothamrnd_book';
+}
+
+@mixin orangebtn {
+    background: #F58220;
+    border: 1px solid #F58220;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        color: #F58220;
+        background: #fff;
+        border-color: #fff;
+    }
+}
+
+@mixin transparentbtn {
+    background: transparent;
+    border: 1px solid #F58220;
+    border-radius: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #F58220;
+    text-decoration: none;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &:hover {
+        color: #fff;
+        background: #F58220;
+    }
+}

@@ -1,0 +1,44 @@
+header.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    z-index: 6;
+
+    .header__logo {
+        max-width: 144px;
+    }
+
+    .header__nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: 350;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
