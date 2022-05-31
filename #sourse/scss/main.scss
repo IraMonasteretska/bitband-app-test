@@ -703,8 +703,7 @@
     border-width: 3px;
 }
 
-.welcomescreen .bublewrapp
- {
+.welcomescreen .bublewrapp {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -758,10 +757,19 @@
 }
 
 // ------------v2
+.welcomescreen .welcomescreen__leftbox .welcomescreen__btngroup .transparentbutton,
+.welcomescreen .welcomescreen__leftbox .welcomescreen__btngroup .orangebutton,
+header.header .header__nav ul li a,
+.pillars .pillarsbtn,
+footer.footer .footer__rightbox a {
+    font-weight: 500;
+}
+
 .pagewrapper.v2 {
     .welcomescreen {
         background: #142666;
     }
+
     .pillars {
         background: #142666;
     }
@@ -1502,7 +1510,7 @@
         margin-left: 0;
     }
 
-    
+
 
 
 
@@ -1517,6 +1525,7 @@
 }
 
 @media(max-width:575.8px) {
+
     .welcomescreen .bublewrapp,
     .pillars .bublewrapp {
         display: none;
